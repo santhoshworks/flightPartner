@@ -8,8 +8,8 @@ var flightSchema  = new mongoose.Schema({
     userID:String,
     from :String,
     to :String,
-    startDate :String,
-    flightNumber: String
+    startDate :Date,
+    flightCode: String
 });
 
 module.exports   = restful.model('flightInfo', flightSchema);
